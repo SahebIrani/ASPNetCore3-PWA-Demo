@@ -1,0 +1,23 @@
+{
+	"name": "Progressive Web Application",
+	"short_name": "PWA",
+	"description": "The most awesome application in the world",
+	"icons": [
+		{
+			"src": "/images/icon192x192.png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "/images/icon256x256.png",
+			"sizes": "256x256"
+		},
+		{
+			"src": "/images/icon512x512.png",
+			"sizes": "512x512"
+		}
+	],
+	"theme_color": "#ccc",
+	"display": "standalone",
+	"start_url": "/"
+	//"start_url": "/PWAApp/"
+}

@@ -1,0 +1,50 @@
+{
+	"lang": "en",
+	"dir": "ltr",
+	"name": "Progressive Web Application",
+	"description": "The most awesome application in the world",
+	"short_name": "PWA",
+	"icons": [
+		{
+			"platform": "android",
+			"purpose": "badge",
+			"src": "/images/icon192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+
+		},
+		{
+			"src": "/images/icon256x256.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		},
+		{
+			"src": "/images/icon512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"scope": "/",
+	"start_url": "/", //"/PWAApp/"
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"theme_color": "aliceblue",
+	"background_color": "red",
+	"serviceworker": {
+		"src": "serviceworker.js",
+		"scope": "/",
+		"update_via_cache": "none"
+	},
+	"screenshots": [
+		{
+			"src": "/images/th1.jpg",
+			"sizes": "640x480",
+			"type": "image/jpeg"
+		},
+		{
+			"src": "/images/th2.jpg",
+			"sizes": "1280x920",
+			"type": "image/jpeg"
+		}
+	]
+}

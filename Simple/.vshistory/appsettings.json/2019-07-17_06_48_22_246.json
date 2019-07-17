@@ -1,0 +1,20 @@
+{
+	"ConnectionStrings": {
+		"DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=aspnet-Simple-87D91E7D-59FE-42F0-98A2-28DC876F69E0;Trusted_Connection=True;MultipleActiveResultSets=true"
+	},
+	"Logging": {
+		"LogLevel": {
+			"Default": "Information",
+			"Microsoft": "Warning",
+			"Microsoft.Hosting.Lifetime": "Information"
+		}
+	},
+	"AllowedHosts": "*",
+	"pwa": {
+		"registerWebmanifest": true,
+		"cacheId": "v1.0",
+		"strategy": "cacheFirst"
+		//"routesToPreCache": "/, /contact.html, data.json",
+		//"routesToPreCache": "foo.css, bar.js"
+	}
+}

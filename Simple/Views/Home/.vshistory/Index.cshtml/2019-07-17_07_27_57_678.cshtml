@@ -1,0 +1,70 @@
+@{
+	ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+	<h1 class="display-4">Welcome</h1>
+	<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+@using WebEssentials.AspNetCore.Pwa
+@inject WebManifest wm
+@{
+	if (!Context.Request.IsHttps && Context.Request.Host.Host != "localhost")
+	{
+		Context.Response.Redirect("https://" + Context.Request.Host);
+	}
+}
+
+<h1>PWA Sample</h1>
+<dl>
+	<dt>Name</dt>
+	<dd>@wm.Name</dd>
+	<dt>Short name</dt>
+	<dd>@wm.ShortName</dd>
+	<dt>BackgroundColor</dt>
+	<dd>@wm.BackgroundColor</dd>
+	<dt>Categories</dt>
+	<dd>@wm.Categories</dd>
+	<dt>Description</dt>
+	<dd>@wm.Description</dd>
+	<dt>Dir</dt>
+	<dd>@wm.Dir</dd>
+	<dt>Display</dt>
+	<dd>@wm.Display</dd>
+	<dt>FileName</dt>
+	<dd>@wm.FileName</dd>
+	<dt>IarcRatingId</dt>
+	<dd>@wm.IarcRatingId</dd>
+	<dt>Icons</dt>
+	<dd>@wm.Icons</dd>
+	<dt>Lang</dt>
+	<dd>@wm.Lang</dd>
+	<dt>Orientation</dt>
+	<dd>@wm.Orientation</dd>
+	<dt>PreferRelatedApplications</dt>
+	<dd>@wm.PreferRelatedApplications</dd>
+	<dt>RawJson</dt>
+	<dd>@wm.RawJson</dd>
+	<dt>RelatedApplications</dt>
+	<dd>@wm.RelatedApplications</dd>
+	<dt>Scope</dt>
+	<dd>@wm.Scope</dd>
+	<dt>StartUrl</dt>
+	<dd>@wm.StartUrl</dd>
+	<dt>ThemeColor</dt>
+	<dd>@wm.ThemeColor</dd>
+</dl>
+    <img src="~/icon.png?v=hash" />
+
+    <button onclick="showimage()">Show image</button>
+
+    <script>
+        function showimage() {
+			document.body.innerHTML +=
+				'<img src="/icon2.png?rnd=' + Math.random() + '" />' +
+                '<img src="/icon2.png?v=hash&rnd=' + Math.random() + '" />' +
+			;
+        }
+    </script>

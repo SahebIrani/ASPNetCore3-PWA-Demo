@@ -1,0 +1,12 @@
+@page
+@{
+	ViewData["Title"] = "Offline";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>This page was not cached before you went offline.</p>
+
+// Update 'version' if you need to refresh the cache
+var version = 'v1.1::CacheFirstSafe';
+var offlineUrl = "/Offline";
