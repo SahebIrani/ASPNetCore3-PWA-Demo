@@ -1,13 +1,9 @@
 {
-	"lang": "en",
-	"dir": "ltr",
 	"name": "Progressive Web Application",
 	"description": "The most awesome application in the world",
 	"short_name": "PWA",
 	"icons": [
 		{
-			"platform": "android",
-			"purpose": "badge",
 			"src": "/images/icon192x192.png",
 			"sizes": "192x192"
 		},
@@ -22,8 +18,8 @@
 	],
 	"scope": "/",
 	"start_url": "/",
-	"display": "fullscreen",
 	"orientation": "landscape",
+	"display": "fullscreen",
 	"theme_color": "aliceblue",
 	"background_color": "red",
 	"serviceworker": {

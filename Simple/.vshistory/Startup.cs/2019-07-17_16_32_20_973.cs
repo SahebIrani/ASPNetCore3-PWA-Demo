@@ -49,9 +49,9 @@ namespace Simple
 
 			services.AddProgressiveWebApp(new PwaOptions
 			{
-				BaseRoute = "/", //_baseURL
+				//BaseRoute = "/", //_baseURL
 				AllowHttp = true,
-				EnableCspNonce = true,
+				//EnableCspNonce = true,
 				RegisterServiceWorker = true,
 				RegisterWebmanifest = true,
 				CacheId = "v1.1::CacheFirst",

@@ -1,0 +1,25 @@
+{
+	"ConnectionStrings": {
+		"DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=aspnet-Simple-87D91E7D-59FE-42F0-98A2-28DC876F69E0;Trusted_Connection=True;MultipleActiveResultSets=true"
+	},
+	"Logging": {
+		"LogLevel": {
+			"Default": "Information",
+			"Microsoft": "Warning",
+			"Microsoft.Hosting.Lifetime": "Information"
+		}
+	},
+	"AllowedHosts": "*"
+	//"pwa": {
+	//	"registerWebmanifest": true,
+	//	"registerServiceWorker": true,
+	//	"cacheId": "v1.1::CacheFirst",
+	//	"offlineRoute": "/Offline",
+	//	"baseRoute": "/", //"/PWAApp",
+	//	"strategy": "cacheFirst", // "enum": [ "cacheFirst", "cacheFirstSafe", "minimal", "networkFirst" ]
+	//	"routesToPreCache": "" // "/, /contact.html, data.json,foo.css, bar.js"
+	//}
+}
+
+
+

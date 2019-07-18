@@ -49,7 +49,7 @@ namespace Simple
 
 			services.AddProgressiveWebApp(new PwaOptions
 			{
-				BaseRoute = "/", //_baseURL
+				//BaseRoute = "/", //_baseURL
 				AllowHttp = true,
 				EnableCspNonce = true,
 				RegisterServiceWorker = true,

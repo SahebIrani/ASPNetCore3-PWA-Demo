@@ -26,11 +26,6 @@
 	"orientation": "landscape",
 	"theme_color": "aliceblue",
 	"background_color": "red",
-	"serviceworker": {
-		"src": "serviceworker.js",
-		"scope": "/",
-		"update_via_cache": "none"
-	},
 	"screenshots": [
 		{
 			"src": "/images/th1.jpg",

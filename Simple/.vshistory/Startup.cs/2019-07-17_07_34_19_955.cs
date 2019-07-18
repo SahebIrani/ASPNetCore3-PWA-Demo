@@ -51,7 +51,7 @@ namespace Simple
 			{
 				BaseRoute = "/", //_baseURL
 				AllowHttp = true,
-				EnableCspNonce = true,
+				//EnableCspNonce = true,
 				RegisterServiceWorker = true,
 				RegisterWebmanifest = true,
 				CacheId = "v1.1::CacheFirst",

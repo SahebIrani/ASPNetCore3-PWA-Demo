@@ -49,14 +49,14 @@ namespace Simple
 
 			services.AddProgressiveWebApp(new PwaOptions
 			{
-				BaseRoute = "/", //_baseURL
-				AllowHttp = true,
-				EnableCspNonce = true,
-				RegisterServiceWorker = true,
-				RegisterWebmanifest = true,
+				//BaseRoute = "/", //_baseURL
+				//AllowHttp = true,
+				//EnableCspNonce = true,
+				//RegisterServiceWorker = true,
+				//RegisterWebmanifest = true,
 				CacheId = "v1.1::CacheFirst",
 				OfflineRoute = "/Offline",
-				RoutesToPreCache = "", // "/, /contact.html, data.json",
+				//RoutesToPreCache = "", // "/, /contact.html, data.json",
 				Strategy = ServiceWorkerStrategy.CacheFirst,
 				WebManifestCacheControlMaxAge = 2592000, //31536000
 				ServiceWorkerCacheControlMaxAge = 2592000 //31536000
